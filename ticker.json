@@ -25,6 +25,11 @@
   { "label": "SERIES C",  "text": "Ada reaches $130M raised to scale AI customer support from 46 Spadina" },
   { "label": "RESEARCH",  "text": "Vector Institute — the AI lab co-founded by Geoffrey Hinton, up at MaRS" },
   { "label": "EXIT",      "text": "Kobo: born in Toronto, acquired by Rakuten — still shipping e-readers from John St" },
+  { "label": "SERIES A",  "text": "Ideogram raises $80M from a16z & Index to scale AI image generation, from 320 Bay" },
+  { "label": "SERIES E",  "text": "Turo hits $250M Series E — 400K+ vehicles shared as the largest P2P car-rental network" },
+  { "label": "SERIES A",  "text": "Secoda raises $14M led by Craft Ventures for its AI data platform at 109 Sudbury" },
+  { "label": "SEED",      "text": "Argos Research raises $1.6M to build continual-learning neural nets from 145 Berkeley" },
+  { "label": "FUND",      "text": "Golden Ventures' Fund V brings total AUM to $364M, from 20 Maud St" },
   { "label": "IPO",       "text": "Shopify trades as SHOP on TSX & NYSE" },
-  { "label": "STAT",      "text": "42 companies indexed across downtown Toronto" }
+  { "label": "STAT",      "text": "49 companies indexed across downtown Toronto" }
 ]

@@ -292,5 +292,57 @@
     "address": "30 Duncan St, Toronto, ON M5V 2C3",
     "lat": 43.64906750054257, "lng": -79.3893288,
     "funding": { "type": "Venture", "amount": "$35M total (OpenView)" }
+  },
+  {
+    "name": "Golden Ventures",
+    "domain": "golden.ventures",
+    "address": "20 Maud St, Toronto, ON M5V 2M5",
+    "lat": 43.6464500, "lng": -79.4000100,
+    "funding": { "type": "VC", "amount": "Fund V, $364M AUM" }
+  },
+  {
+    "name": "Superwhisper",
+    "domain": "superwhisper.com",
+    "address": "10 Morrow Ave, Toronto, ON",
+    "lat": 43.65253384614744, "lng": -79.44730703761952,
+    "funding": { "type": "Bootstrapped" }
+  },
+  {
+    "name": "Argos Research",
+    "domain": "argosresearch.com",
+    "address": "145 Berkeley St, Toronto, ON",
+    "lat": 43.6551603, "lng": -79.3654918,
+    "funding": { "type": "Seed", "amount": "$1.6M USD" },
+    "tag": "AI continual-learning lab"
+  },
+  {
+    "name": "Ideogram",
+    "domain": "ideogram.ai",
+    "address": "320 Bay St, Toronto, ON",
+    "lat": 43.64953018716761, "lng": -79.38094035649331,
+    "funding": { "type": "Series A", "amount": "$80M USD (a16z, Index)", "date": "2024-02" },
+    "tag": "AI image generation"
+  },
+  {
+    "name": "Secoda",
+    "domain": "secoda.co",
+    "address": "109 Sudbury St, Toronto, ON",
+    "lat": 43.64114644918278, "lng": -79.42292175390135,
+    "funding": { "type": "Series A", "amount": "$14M USD (Craft Ventures)", "date": "2024-11" },
+    "tag": "AI for data & analytics"
+  },
+  {
+    "name": "Workday",
+    "domain": "workday.com",
+    "address": "200 Wellington St W, Suite 701, Toronto, ON M5V 0N6",
+    "lat": 43.64579962438335, "lng": -79.38774198391535,
+    "funding": { "type": "Public", "amount": "NASDAQ: WDAY" }
+  },
+  {
+    "name": "Turo",
+    "domain": "turo.com",
+    "lat": 43.647145028489945, "lng": -79.39613201131499,
+    "funding": { "type": "Series E", "amount": "$250M" },
+    "tag": "Peer-to-peer car rental"
   }
 ]
