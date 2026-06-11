@@ -1,0 +1,187 @@
+[
+  {
+    "name": "Wealthsimple",
+    "domain": "wealthsimple.com",
+    "address": "80 Spadina Ave, Toronto, ON",
+    "lat": 43.646186411493694, "lng": -79.39557340725017,
+    "funding": { "type": "Late Stage", "amount": "$750M @ $10B", "date": "2025-10" }
+  },
+  {
+    "name": "Cohere",
+    "domain": "cohere.com",
+    "address": "171 John St, 2nd Floor, Toronto, ON M5T 1X3",
+    "lat": 43.6507434, "lng": -79.3910699,
+    "funding": { "type": "Series D+", "amount": "$600M @ $7B", "date": "2025-09" }
+  },
+  {
+    "name": "Ada",
+    "domain": "ada.cx",
+    "address": "46 Spadina Ave, Suite 500, Toronto, ON M5V 2H8",
+    "lat": 43.6446789, "lng": -79.3950805,
+    "funding": { "type": "Series C", "amount": "$130M" }
+  },
+  {
+    "name": "Shopify",
+    "domain": "shopify.com",
+    "logo": "assets/logos/shopify.png",
+    "lat": 43.64458394678465, "lng": -79.40075112897573,
+    "funding": { "type": "Public", "amount": "TSX/NYSE: SHOP" }
+  },
+  {
+    "name": "Netflix",
+    "domain": "netflix.com",
+    "address": "The Well, 8 Spadina Ave (32nd Floor), Toronto, ON",
+    "lat": 43.6429832, "lng": -79.3945268,
+    "funding": { "type": "Public", "amount": "NASDAQ: NFLX" }
+  },
+  {
+    "name": "Nvidia",
+    "domain": "nvidia.com",
+    "address": "Portland Commons, 530 Front St W, Toronto, ON",
+    "lat": 43.6417900, "lng": -79.3985600,
+    "funding": { "type": "Public", "amount": "NASDAQ: NVDA" }
+  },
+  {
+    "name": "Intuit",
+    "domain": "intuit.com",
+    "address": "The Well, 8 Spadina Ave, Toronto, ON",
+    "lat": 43.6429832, "lng": -79.3945268,
+    "funding": { "type": "Public", "amount": "NASDAQ: INTU" }
+  },
+  {
+    "name": "General Magic",
+    "domain": "generalmagic.io",
+    "address": "20 Maud St, Toronto, ON M5V 2M5",
+    "lat": 43.6464500, "lng": -79.4000100,
+    "funding": { "type": "Seed", "amount": "$7.2M" }
+  },
+  {
+    "name": "NationGraph",
+    "domain": "nationgraph.com",
+    "address": "20 Maud St, Toronto, ON M5V 2M5",
+    "lat": 43.6464500, "lng": -79.4000100,
+    "funding": { "type": "Series A", "amount": "$18M" }
+  },
+  {
+    "name": "Stan",
+    "domain": "stan.ai",
+    "logo": "assets/logos/stan.png",
+    "address": "100 Queens Quay E, Toronto, ON M5E 0C7",
+    "lat": 43.64366262111847, "lng": -79.3704668,
+    "funding": { "type": "Early Stage" }
+  },
+  {
+    "name": "Shortscut",
+    "domain": "shortscut.co",
+    "address": "147 Spadina Ave, Toronto, ON",
+    "lat": 43.6481625, "lng": -79.3956750,
+    "funding": { "type": "Bootstrapped" },
+    "tag": "Content Studio"
+  },
+  {
+    "name": "Venn",
+    "domain": "venn.ca",
+    "lat": 43.64709546621926, "lng": -79.39620421849985,
+    "funding": { "type": "Series A", "amount": "$21.5M" }
+  },
+  {
+    "name": "Float",
+    "domain": "floatfinancial.com",
+    "lat": 43.64712640221162, "lng": -79.39503236322123,
+    "funding": { "type": "Series B", "amount": "$70M" }
+  },
+  {
+    "name": "Opendoor",
+    "domain": "opendoor.com",
+    "address": "468 King St W, Toronto, ON",
+    "lat": 43.6455537, "lng": -79.3959300,
+    "funding": { "type": "Public", "amount": "NASDAQ: OPEN" }
+  },
+  {
+    "name": "Cerebras",
+    "domain": "cerebras.ai",
+    "lat": 43.65106237039153, "lng": -79.3815746,
+    "funding": { "type": "Series G", "amount": "$1.1B @ $8.1B", "date": "2025-09" }
+  },
+  {
+    "name": "Groq",
+    "domain": "groq.com",
+    "lat": 43.6452617, "lng": -79.3953172,
+    "funding": { "type": "Late Stage", "amount": "$750M @ $6.9B", "date": "2025-09" }
+  },
+  {
+    "name": "Google",
+    "domain": "google.com",
+    "address": "65 King St E, Toronto, ON M5C 1G3",
+    "lat": 43.64960187604237, "lng": -79.37495075017618,
+    "funding": { "type": "Public", "amount": "NASDAQ: GOOGL" }
+  },
+  {
+    "name": "Microsoft",
+    "domain": "microsoft.com",
+    "address": "CIBC Square, 81 Bay St, Toronto, ON",
+    "lat": 43.6441686, "lng": -79.3777235,
+    "funding": { "type": "Public", "amount": "NASDAQ: MSFT" }
+  },
+  {
+    "name": "Boardy",
+    "domain": "boardy.ai",
+    "address": "1050 King St W, 1st Floor, Toronto, ON M6K 0C7",
+    "lat": 43.6413717, "lng": -79.4163661,
+    "funding": { "type": "Seed", "amount": "$8M ($11M total)", "date": "2025-01" }
+  },
+  {
+    "name": "DigitalOcean",
+    "domain": "digitalocean.com",
+    "lat": 43.67005648313432, "lng": -79.38554593242458,
+    "funding": { "type": "Public", "amount": "NYSE: DOCN" }
+  },
+  {
+    "name": "Vector Institute",
+    "domain": "vectorinstitute.ai",
+    "lat": 43.66044479688847, "lng": -79.38914540358968,
+    "funding": { "type": "Non-Profit" },
+    "tag": "AI Research Lab"
+  },
+  {
+    "name": "Stripe",
+    "domain": "stripe.com",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Private", "amount": "Dual HQ: SF & Dublin" }
+  },
+  {
+    "name": "DoorDash",
+    "domain": "doordash.com",
+    "lat": 43.64586031600581, "lng": -79.38770867106017,
+    "funding": { "type": "Public", "amount": "NASDAQ: DASH" }
+  },
+  {
+    "name": "Lightspeed",
+    "domain": "lightspeedhq.com",
+    "lat": 43.64361895731644, "lng": -79.3936151,
+    "funding": { "type": "Public", "amount": "TSX/NYSE: LSPD" }
+  },
+  {
+    "name": "Rakuten",
+    "domain": "rakuten.com",
+    "lat": 43.6492804, "lng": -79.3910236,
+    "funding": { "type": "Public", "amount": "TYO: 4755" },
+    "tag": "Rakuten Kobo HQ"
+  },
+  {
+    "name": "Instacart",
+    "domain": "instacart.com",
+    "logo": "assets/logos/instacart.png",
+    "lat": 43.63783941142171, "lng": -79.42535596367073,
+    "funding": { "type": "Public", "amount": "NASDAQ: CART" }
+  },
+  {
+    "name": "New Stadium",
+    "domain": "newsystems.ca",
+    "logo": "assets/logos/newstadium.jpg",
+    "address": "83 Walnut Ave, Toronto, ON",
+    "lat": 43.641849579089666, "lng": -79.4073890884496,
+    "funding": { "type": "Collaborative Third Space" }
+  }
+]
