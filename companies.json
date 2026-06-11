@@ -284,5 +284,13 @@
     "address": "366 Adelaide St W, Toronto, ON",
     "lat": 43.6472417816774, "lng": -79.39440211614222,
     "funding": { "type": "Non-Profit", "amount": "Mozilla Foundation" }
+  },
+  {
+    "name": "Voiceflow",
+    "domain": "voiceflow.com",
+    "logo": "assets/logos/voiceflow.png",
+    "address": "30 Duncan St, Toronto, ON M5V 2C3",
+    "lat": 43.64906750054257, "lng": -79.3893288,
+    "funding": { "type": "Venture", "amount": "$35M total (OpenView)" }
   }
 ]
