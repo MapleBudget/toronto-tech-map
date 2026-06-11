@@ -154,7 +154,7 @@
   {
     "name": "DoorDash",
     "domain": "doordash.com",
-    "lat": 43.64586031600581, "lng": -79.38770867106017,
+    "lat": 43.64579962438335, "lng": -79.38774198391535,
     "funding": { "type": "Public", "amount": "NASDAQ: DASH" }
   },
   {
@@ -310,6 +310,7 @@
   {
     "name": "Argos Research",
     "domain": "argosresearch.com",
+    "logo": "assets/logos/argos.png",
     "address": "145 Berkeley St, Toronto, ON",
     "lat": 43.6551603, "lng": -79.3654918,
     "funding": { "type": "Seed", "amount": "$1.6M USD" },
@@ -341,7 +342,7 @@
   {
     "name": "Turo",
     "domain": "turo.com",
-    "lat": 43.647145028489945, "lng": -79.39613201131499,
+    "lat": 43.64579962438335, "lng": -79.38774198391535,
     "funding": { "type": "Series E", "amount": "$250M" },
     "tag": "Peer-to-peer car rental"
   }

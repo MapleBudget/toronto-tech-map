@@ -73,6 +73,12 @@
   .cursor { display: inline-block; width: 9px; height: 15px; background: var(--green-bright); margin-left: 3px; vertical-align: -2px; animation: blink 1.1s step-end infinite; }
   @keyframes blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
   .panel-head .count { font-size: 11px; color: var(--muted); letter-spacing: .05em; }
+  .sortbar { display: flex; align-items: center; gap: 7px; margin-top: 11px; }
+  .sortbar .sortlabel { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+  .sortbtn { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+    padding: 4px 9px; background: transparent; color: var(--muted); border: 1px solid var(--line); cursor: pointer; }
+  .sortbtn:hover { border-color: var(--green-bright); color: var(--green-bright); }
+  .sortbtn.active { background: var(--green); color: #fff; border-color: var(--green); }
 
   .panel-list { flex: 1; overflow-y: auto; }
   .panel-list::-webkit-scrollbar { width: 8px; }
@@ -236,6 +242,11 @@
       <div class="eyebrow">Where The Builders Are</div>
       <h1>Build 416<span class="cursor"></span></h1>
       <div class="count" id="coCount">LOADING…</div>
+      <div class="sortbar">
+        <span class="sortlabel">Sort</span>
+        <button class="sortbtn active" data-sort="default">Default</button>
+        <button class="sortbtn" data-sort="alpha">A–Z</button>
+      </div>
     </div>
     <div class="panel-list" id="coList"></div>
     <div class="panel-foot">
@@ -430,6 +441,7 @@ function addSky() {
 const markers = [];
 let openPopup = null;
 let selected = -1;
+let sortMode = "default"; // "default" (JSON order) | "alpha" (A–Z)
 
 async function loadCompanies() {
   try {
@@ -541,7 +553,7 @@ function selectCompany(i, fly) {
   selected = i;
   const c = COMPANIES[i];
   markers.forEach((mk, j) => mk.inner.classList.toggle("sel", j === i));
-  document.querySelectorAll(".co").forEach((row, j) => row.classList.toggle("active", j === i));
+  document.querySelectorAll(".co").forEach((row) => row.classList.toggle("active", Number(row.dataset.idx) === i));
 
   if (openPopup) openPopup.remove();
   openPopup = new maplibregl.Popup({ offset: 20, closeButton: false, className: "co-pop", maxWidth: "280px" })
@@ -570,9 +582,14 @@ function buildSidebar() {
   const list = document.getElementById("coList");
   list.innerHTML = "";
   document.getElementById("coCount").textContent = `${COMPANIES.length} COMPANIES INDEXED`;
-  COMPANIES.forEach((c, i) => {
+  // Render in the chosen order, but keep each row tied to its original COMPANIES index
+  const order = COMPANIES.map((c, i) => i);
+  if (sortMode === "alpha") order.sort((a, b) => COMPANIES[a].name.localeCompare(COMPANIES[b].name));
+  order.forEach((i) => {
+    const c = COMPANIES[i];
     const row = document.createElement("div");
-    row.className = "co";
+    row.className = "co" + (i === selected ? " active" : "");
+    row.dataset.idx = i;
     const amt = c.funding ? cleanAmount(c.funding.amount) : "";
     const tag = c.funding ? (c.funding.type + (amt ? ` ${amt}` : "")) : "";
     row.innerHTML = `
@@ -587,6 +604,15 @@ function buildSidebar() {
 }
 
 // ---------- Controls ----------
+document.querySelectorAll(".sortbtn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation(); // don't toggle the mobile sheet
+    sortMode = btn.dataset.sort;
+    document.querySelectorAll(".sortbtn").forEach((b) => b.classList.toggle("active", b === btn));
+    buildSidebar();
+  });
+});
+
 document.getElementById("zin").onclick = () => map.zoomIn({ duration: 400 });
 document.getElementById("zout").onclick = () => map.zoomOut({ duration: 400 });
 document.getElementById("compass").onclick = () => map.easeTo({ bearing: 0, duration: 600 });
