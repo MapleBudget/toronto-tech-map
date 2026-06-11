@@ -37,8 +37,7 @@
   {
     "name": "Nvidia",
     "domain": "nvidia.com",
-    "address": "Portland Commons, 530 Front St W, Toronto, ON",
-    "lat": 43.6417900, "lng": -79.3985600,
+    "lat": 43.6452617, "lng": -79.3953172,
     "funding": { "type": "Public", "amount": "NASDAQ: NVDA" }
   },
   {
@@ -50,7 +49,9 @@
   },
   {
     "name": "General Magic",
-    "domain": "generalmagic.io",
+    "domain": "generalmagic.inc",
+    "logo": "assets/logos/generalmagic.png",
+    "logoDark": true,
     "address": "20 Maud St, Toronto, ON M5V 2M5",
     "lat": 43.6464500, "lng": -79.4000100,
     "funding": { "type": "Seed", "amount": "$7.2M" }
@@ -64,7 +65,7 @@
   },
   {
     "name": "Stan",
-    "domain": "stan.ai",
+    "domain": "stan.store",
     "logo": "assets/logos/stan.png",
     "address": "100 Queens Quay E, Toronto, ON M5E 0C7",
     "lat": 43.64366262111847, "lng": -79.3704668,
@@ -101,13 +102,13 @@
     "name": "Cerebras",
     "domain": "cerebras.ai",
     "lat": 43.65106237039153, "lng": -79.3815746,
-    "funding": { "type": "Series G", "amount": "$1.1B @ $8.1B", "date": "2025-09" }
+    "funding": { "type": "Public", "amount": "NASDAQ: CBRS" }
   },
   {
     "name": "Groq",
     "domain": "groq.com",
     "lat": 43.6452617, "lng": -79.3953172,
-    "funding": { "type": "Late Stage", "amount": "$750M @ $6.9B", "date": "2025-09" }
+    "funding": { "type": "Acqui-hire", "amount": "$20B (Nvidia)" }
   },
   {
     "name": "Google",
@@ -183,5 +184,105 @@
     "address": "83 Walnut Ave, Toronto, ON",
     "lat": 43.641849579089666, "lng": -79.4073890884496,
     "funding": { "type": "Collaborative Third Space" }
+  },
+  {
+    "name": "Sentry",
+    "domain": "sentry.io",
+    "address": "129 Spadina Ave, Toronto, ON M5V 2L3",
+    "lat": 43.64750023275513, "lng": -79.39553994061254,
+    "funding": { "type": "Series E", "amount": "$90M @ $3B", "date": "2022-05" }
+  },
+  {
+    "name": "Modem",
+    "domain": "modem.dev",
+    "logo": "assets/logos/modem.png",
+    "lat": 43.6413717, "lng": -79.4163661,
+    "funding": { "type": "Pre-Seed", "amount": "$4.4M (Accel)", "date": "2026-02" },
+    "tag": "AI product management"
+  },
+  {
+    "name": "Ribbon",
+    "domain": "ribbon.ai",
+    "lat": 43.6413717, "lng": -79.4163661,
+    "funding": { "type": "Seed", "amount": "$8.2M (Radical)", "date": "2025-03" },
+    "tag": "Voice AI interviewer"
+  },
+  {
+    "name": "8090 Solutions",
+    "domain": "8090.inc",
+    "address": "40 King St W, Toronto, ON",
+    "lat": 43.64989888973925, "lng": -79.37963318560216,
+    "funding": { "type": "Self-Funded", "amount": "Chamath / Social Capital" }
+  },
+  {
+    "name": "Sierra",
+    "domain": "sierra.ai",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Series E", "amount": "$950M @ $15.8B", "date": "2026-05" }
+  },
+  {
+    "name": "Amazon",
+    "domain": "amazon.com",
+    "address": "120 Bremner Blvd, Toronto, ON M5J 0A1",
+    "lat": 43.64298034143925, "lng": -79.38315737305192,
+    "funding": { "type": "Public", "amount": "NASDAQ: AMZN" }
+  },
+  {
+    "name": "LinkedIn",
+    "domain": "linkedin.com",
+    "address": "16 York St, Toronto, ON M5J 0E6",
+    "lat": 43.64262643653112, "lng": -79.38169593336025,
+    "funding": { "type": "Subsidiary", "amount": "Microsoft (MSFT)" }
+  },
+  {
+    "name": "Jobber",
+    "domain": "getjobber.com",
+    "address": "200 Wellington St W #400, Toronto, ON M5V 3C7",
+    "lat": 43.64579962438335, "lng": -79.38774198391535,
+    "funding": { "type": "Series D", "amount": "$100M (General Atlantic)", "date": "2023-02" }
+  },
+  {
+    "name": "Relay",
+    "domain": "relayfi.com",
+    "address": "60 Adelaide St E, Suite 700, Toronto, ON",
+    "lat": 43.651202966617596, "lng": -79.37578679946252,
+    "funding": { "type": "Growth", "amount": "$50M (General Catalyst)", "date": "2026-05" }
+  },
+  {
+    "name": "KOHO",
+    "domain": "koho.ca",
+    "address": "67 Mowat Ave, Suite 200, Toronto, ON M6K 3E3",
+    "lat": 43.63833159198539, "lng": -79.42545084765732,
+    "funding": { "type": "Series E", "amount": "$130M CAD @ $1.33B", "date": "2026-06" }
+  },
+  {
+    "name": "Clio",
+    "domain": "clio.com",
+    "address": "16 York St, Toronto, ON M5J 0E6",
+    "lat": 43.64262643653112, "lng": -79.38169593336025,
+    "funding": { "type": "Series G", "amount": "$500M @ $5B", "date": "2025-11" }
+  },
+  {
+    "name": "Xanadu",
+    "domain": "xanadu.ai",
+    "address": "777 Bay St, Suite 2901, Toronto, ON",
+    "lat": 43.66073145112129, "lng": -79.38487103527919,
+    "funding": { "type": "Public", "amount": "NASDAQ/TSX: XNDU" },
+    "tag": "Photonic quantum computing"
+  },
+  {
+    "name": "Rootly",
+    "domain": "rootly.com",
+    "address": "366 Adelaide St W, Toronto, ON",
+    "lat": 43.6472417816774, "lng": -79.39440211614222,
+    "funding": { "type": "Series A", "amount": "$12M ($15.2M total)", "date": "2023-08" }
+  },
+  {
+    "name": "Mozilla",
+    "domain": "mozilla.org",
+    "address": "366 Adelaide St W, Toronto, ON",
+    "lat": 43.6472417816774, "lng": -79.39440211614222,
+    "funding": { "type": "Non-Profit", "amount": "Mozilla Foundation" }
   }
 ]

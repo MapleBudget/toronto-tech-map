@@ -125,6 +125,8 @@
     display: grid; place-items: center; overflow: hidden; transition: transform .14s ease; }
   .co-marker:hover .tile { transform: scale(1.12); }
   .co-marker .tile img { width: 20px; height: 20px; object-fit: contain; }
+  /* For light/transparent logos that vanish on the white tile — render as a black silhouette */
+  .logo-dark { filter: brightness(0); }
   .co-marker .tile .initial { font-weight: 700; color: #070A08; font-size: 13px; }
   .co-marker .ring { position: absolute; inset: -5px; border: 1px solid var(--green-bright); opacity: 0; pointer-events: none; }
   .co-marker.sel .tile { border-color: var(--green); border-width: 2px; }
@@ -204,8 +206,12 @@
   <div class="brand"><span class="dot"></span>Toronto Tech</div>
 
   <div class="controls">
-    <div id="compass" class="ctl" title="Reset bearing">
+    <div id="compass" class="ctl" title="Reset bearing (north up)">
       <svg width="18" height="18" viewBox="0 0 24 24"><polygon points="12,3 8,13 12,11 16,13" fill="#0FA968"/><polygon points="12,21 8,11 12,13 16,11" fill="#6B7A6E"/></svg>
+    </div>
+    <div class="ctl-group" style="display:flex;flex-direction:column">
+      <div id="rotL" class="ctl" title="Rotate left">⟲</div>
+      <div id="rotR" class="ctl" title="Rotate right" style="border-top:0">⟳</div>
     </div>
     <div class="ctl-group" style="display:flex;flex-direction:column">
       <div id="zin" class="ctl" title="Zoom in">+</div>
@@ -268,7 +274,7 @@
       </div>
       <div class="form-success" id="formSuccess">
         <div class="big">Submitted</div>
-        <p>We review and add new companies within a few days. First-time submissions trigger a one-time confirmation email to our inbox.</p>
+        <p>We review and add new companies ASAP. Thanks! &mdash; Nelson</p>
         <div style="margin-top:18px"><button class="btn ghost" id="successClose">Close</button></div>
       </div>
     </div>
@@ -305,11 +311,10 @@ const map = new maplibregl.Map({
   antialias: true, maxPitch: 70,
   maxBounds: [[-79.48, 43.60], [-79.32, 43.70]],
   minZoom: 12.5,
-  dragRotate: false,            // 2D top-down by default
   attributionControl: { compact: true },
 });
 window._map = map;
-map.touchZoomRotate.disableRotation();
+// Rotation enabled in both 2D and 3D (right-drag, Shift+arrows, or the rotate buttons)
 
 const setP = (id, p, v) => { try { map.setPaintProperty(id, p, v); } catch (e) {} };
 const setL = (id, p, v) => { try { map.setLayoutProperty(id, p, v); } catch (e) {} };
@@ -483,6 +488,7 @@ function buildMarkers() {
     const tile = document.createElement("div"); tile.className = "tile";
     const img = document.createElement("img");
     img.src = logoSrc(c);
+    if (c.logoDark) img.classList.add("logo-dark");
     img.onerror = () => { tile.innerHTML = `<span class="initial">${c.name[0]}</span>`; };
     tile.appendChild(img);
     inner.appendChild(ring); inner.appendChild(tile);
@@ -511,6 +517,9 @@ function cleanAmount(a) { return a && !/^\s*TODO/i.test(a) ? a : ""; }
 // Prefer a local logo (assets/logos/...) if provided, else fall back to the favicon service
 function logoSrc(c) { return c.logo ? c.logo : `https://www.google.com/s2/favicons?domain=${c.domain}&sz=64`; }
 
+// A real, linkable domain (not a TODO placeholder)
+function validDomain(d) { return d && !/^TODO/i.test(d) && d.includes("."); }
+
 function fundingChip(f) {
   if (!f) return "";
   const amt = cleanAmount(f.amount);
@@ -530,7 +539,7 @@ function selectCompany(i, fly) {
     .setHTML(`
       <div class="pname">${c.name}</div>
       ${c.tag ? `<div class="ptag">${c.tag}</div>` : ""}
-      <a class="site" href="https://${c.domain}" target="_blank" rel="noopener">${c.domain} ↗</a>
+      ${validDomain(c.domain) ? `<a class="site" href="https://${c.domain}" target="_blank" rel="noopener">${c.domain} ↗</a>` : ""}
       <div>${fundingChip(c.funding)}</div>
       ${c.address ? `<div class="addr">${c.address}</div>` : ""}
     `).addTo(map);
@@ -558,7 +567,7 @@ function buildSidebar() {
     const tag = c.funding ? (c.funding.type + (amt ? ` ${amt}` : "")) : "";
     row.innerHTML = `
       <span class="prefix">></span>
-      <div class="logo"><img src="${logoSrc(c)}"
+      <div class="logo"><img class="${c.logoDark ? 'logo-dark' : ''}" src="${logoSrc(c)}"
         onerror="this.parentNode.innerHTML='<span class=\\'initial\\'>${c.name[0]}</span>'"></div>
       <div class="meta"><div class="name">${c.name}</div></div>
       <div class="tag">${tag}</div>`;
@@ -571,6 +580,8 @@ function buildSidebar() {
 document.getElementById("zin").onclick = () => map.zoomIn({ duration: 400 });
 document.getElementById("zout").onclick = () => map.zoomOut({ duration: 400 });
 document.getElementById("compass").onclick = () => map.easeTo({ bearing: 0, duration: 600 });
+document.getElementById("rotL").onclick = () => map.easeTo({ bearing: map.getBearing() - 30, duration: 400 });
+document.getElementById("rotR").onclick = () => map.easeTo({ bearing: map.getBearing() + 30, duration: 400 });
 map.on("rotate", () => { const n = document.querySelector("#compass svg"); if (n) n.style.transform = `rotate(${-map.getBearing()}deg)`; });
 
 let is3D = false;
@@ -582,8 +593,8 @@ function set3D(on) {
   btn.classList.toggle("on", on);
   if (map.getLayer("building")) setL("building", "visibility", on ? "none" : "visible");
   if (map.getLayer("building-3d")) setL("building-3d", "visibility", on ? "visible" : "none");
-  if (on) { map.dragRotate.enable(); map.touchZoomRotate.enableRotation(); map.easeTo({ pitch: 55, bearing: -17, duration: 800 }); }
-  else { map.easeTo({ pitch: 0, bearing: 0, duration: 800 }); map.dragRotate.disable(); map.touchZoomRotate.disableRotation(); }
+  if (on) map.easeTo({ pitch: 55, bearing: -17, duration: 800 });
+  else map.easeTo({ pitch: 0, duration: 800 }); // keep current bearing in 2D
 }
 
 // ---------- Status bar (throttled to one update per frame) ----------
