@@ -3,7 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-<title>TORONTO TECH</title>
+<title>BUILD 416 — Where The Builders Are</title>
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg" />
+<meta name="description" content="BUILD 416 — where the builders are in Toronto, Canada. An interactive 3D map of the tech companies and startups across downtown Toronto." />
+<meta property="og:title" content="BUILD 416" />
+<meta property="og:description" content="Where the builders are in Toronto, Canada." />
+<meta property="og:image" content="assets/meta.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="BUILD 416" />
+<meta name="twitter:description" content="Where the builders are in Toronto, Canada." />
+<meta name="twitter:image" content="assets/meta.jpg" />
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -203,7 +213,7 @@
 <body>
   <div id="map"></div>
 
-  <div class="brand"><span class="dot"></span>Toronto Tech</div>
+  <div class="brand"><span class="dot"></span>Build 416</div>
 
   <div class="controls">
     <div id="compass" class="ctl" title="Reset bearing (north up)">
@@ -223,8 +233,8 @@
   <aside id="panel">
     <div class="drag-handle" id="handle"></div>
     <div class="panel-head" id="panelHead">
-      <div class="eyebrow">King West / Spadina</div>
-      <h1>Toronto Tech<span class="cursor"></span></h1>
+      <div class="eyebrow">Where The Builders Are</div>
+      <h1>Build 416<span class="cursor"></span></h1>
       <div class="count" id="coCount">LOADING…</div>
     </div>
     <div class="panel-list" id="coList"></div>
@@ -286,7 +296,7 @@
       <div class="row">> INITIALIZING MAPLIBRE GL<span class="amber"> OK</span></div>
       <div class="row">> LOADING VECTOR TILES<span class="amber"> OK</span></div>
       <div class="row">> MOUNTING COMPANY GRID<span class="amber" id="gridStatus"> …</span></div>
-      <div class="bar" id="bootBar">BOOTING TORONTO TECH GRID… <span id="spin">|</span> <span id="pct">0%</span></div>
+      <div class="bar" id="bootBar">BOOTING BUILD 416 GRID… <span id="spin">|</span> <span id="pct">0%</span></div>
     </div>
   </div>
 

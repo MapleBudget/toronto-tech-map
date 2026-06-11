@@ -1,6 +1,6 @@
-# Toronto Tech
+# BUILD 416
 
-An interactive 3D map of tech companies and startups around King West / Spadina, Toronto — styled as a dark terminal / ops-console.
+Where the builders are in Toronto, Canada. An interactive 3D map of the tech companies and startups across downtown Toronto, styled as a dark terminal / ops-console.
 
 ## Stack
 
