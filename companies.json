@@ -345,5 +345,93 @@
     "lat": 43.64579962438335, "lng": -79.38774198391535,
     "funding": { "type": "Series E", "amount": "$250M" },
     "tag": "Peer-to-peer car rental"
+  },
+  {
+    "name": "GitHub",
+    "domain": "github.com",
+    "address": "CIBC Square, 81 Bay St, Toronto, ON",
+    "lat": 43.6441686, "lng": -79.3777235,
+    "funding": { "type": "Subsidiary", "amount": "Microsoft (MSFT)" }
+  },
+  {
+    "name": "FreshBooks",
+    "domain": "freshbooks.com",
+    "address": "225 King St W, Suite 1200, Toronto, ON M5V 3M2",
+    "lat": 43.646624734077456, "lng": -79.38844128597593,
+    "funding": { "type": "Series E", "amount": "$130M @ $1B" }
+  },
+  {
+    "name": "PagerDuty",
+    "domain": "pagerduty.com",
+    "address": "134 Peter St, Toronto, ON",
+    "lat": 43.64857469155107, "lng": -79.39381022156729,
+    "funding": { "type": "Public", "amount": "NYSE: PD" }
+  },
+  {
+    "name": "Spotify",
+    "domain": "spotify.com",
+    "address": "220 Adelaide St W, Toronto, ON M5H 1W7",
+    "lat": 43.648480874224155, "lng": -79.38796036525758,
+    "funding": { "type": "Public", "amount": "NYSE: SPOT" }
+  },
+  {
+    "name": "Homebase",
+    "domain": "joinhomebase.com",
+    "address": "522 King St W, Toronto, ON",
+    "lat": 43.64520178026832, "lng": -79.39753613358927,
+    "funding": { "type": "Series D", "amount": "$60M" }
+  },
+  {
+    "name": "Aide",
+    "domain": "aide.app",
+    "lat": 43.647609174445556, "lng": -79.39339776492467,
+    "funding": { "type": "Bootstrapped" }
+  },
+  {
+    "name": "Felix",
+    "domain": "felixforyou.ca",
+    "lat": 43.647664432968156, "lng": -79.39190677378886,
+    "funding": { "type": "Series B", "amount": "$50M" },
+    "tag": "Felix Health"
+  },
+  {
+    "name": "Steel",
+    "domain": "steel.dev",
+    "lat": 43.64935245803126, "lng": -79.39697725373034,
+    "funding": { "type": "Seed", "amount": "$8M" }
+  },
+  {
+    "name": "Pine",
+    "domain": "pine.ca",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Funded", "amount": "$50M total" }
+  },
+  {
+    "name": "vlt",
+    "domain": "vlt.io",
+    "lat": 43.6413717, "lng": -79.4163661,
+    "funding": { "type": "Bootstrapped" }
+  },
+  {
+    "name": "Chatbase",
+    "domain": "chatbase.co",
+    "address": "35 McCaul St, Toronto, ON",
+    "lat": 43.65149582625459, "lng": -79.38988531577078,
+    "funding": { "type": "Bootstrapped", "amount": "$10M ARR" }
+  },
+  {
+    "name": "Cresta",
+    "domain": "cresta.com",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Series D", "amount": "$125M" }
+  },
+  {
+    "name": "Box",
+    "domain": "box.com",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Public", "amount": "NYSE: BOX" }
   }
 ]
