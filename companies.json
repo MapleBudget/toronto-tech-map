@@ -433,5 +433,25 @@
     "address": "1 University Ave, Toronto, ON",
     "lat": 43.645940515819184, "lng": -79.3830729882491,
     "funding": { "type": "Public", "amount": "NYSE: BOX" }
+  },
+  {
+    "name": "Questrade",
+    "domain": "questrade.com",
+    "address": "70 York St, Toronto, ON",
+    "lat": 43.64696579801668, "lng": -79.38337042584749,
+    "funding": { "type": "Private", "amount": "$85B AUM" }
+  },
+  {
+    "name": "Robinhood",
+    "domain": "robinhood.com",
+    "lat": 43.65108864693244, "lng": -79.38095700334922,
+    "funding": { "type": "Public", "amount": "NASDAQ: HOOD" }
+  },
+  {
+    "name": "Uber",
+    "domain": "uber.com",
+    "address": "121 Bloor St E, Toronto, ON",
+    "lat": 43.67045745036909, "lng": -79.38395298691137,
+    "funding": { "type": "Public", "amount": "NYSE: UBER" }
   }
 ]
