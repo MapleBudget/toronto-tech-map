@@ -453,5 +453,71 @@
     "address": "121 Bloor St E, Toronto, ON",
     "lat": 43.67045745036909, "lng": -79.38395298691137,
     "funding": { "type": "Public", "amount": "NYSE: UBER" }
+  },
+  {
+    "name": "Tempo",
+    "domain": "tempo.new",
+    "address": "200 Adelaide St W #500, Toronto, ON M5H 1W7",
+    "lat": 43.64871154330896, "lng": -79.38715846122183,
+    "funding": { "type": "Seed", "amount": "$5M" },
+    "tag": "YC W23"
+  },
+  {
+    "name": "Instant Risk Coverage",
+    "domain": "ircnow.com",
+    "address": "468 King St W, Toronto, ON",
+    "lat": 43.6455537, "lng": -79.3959300,
+    "funding": { "type": "Seed", "amount": "$4.2M" }
+  },
+  {
+    "name": "Common Wealth",
+    "domain": "commonwealthretirement.com",
+    "address": "214 King St W, Toronto, ON M5H 3S6",
+    "lat": 43.64754718988642, "lng": -79.38681231949016,
+    "funding": { "type": "Series A", "amount": "$12M" }
+  },
+  {
+    "name": "Driver",
+    "domain": "driver.dev",
+    "address": "120 Front St E, Toronto, ON M5A 1E3",
+    "lat": 43.65005302207634, "lng": -79.3701355256649,
+    "funding": { "type": "Pre-Seed", "amount": "$1M" }
+  },
+  {
+    "name": "Bloomberg",
+    "domain": "bloomberg.com",
+    "address": "161 Bay St #4300, Toronto, ON M5J 2S1",
+    "lat": 43.64646324527549, "lng": -79.37957549648304,
+    "funding": { "type": "Private", "amount": "~$13B+ Annual Revenue" }
+  },
+  {
+    "name": "Waabi",
+    "domain": "waabi.ai",
+    "address": "440 Bathurst St, Toronto, ON M5T 2S6",
+    "lat": 43.65507596890471, "lng": -79.40756630838112,
+    "funding": { "type": "Series C", "amount": "$750M", "date": "2026-01" },
+    "tag": "Autonomous driving"
+  },
+  {
+    "name": "Harvey",
+    "domain": "harvey.ai",
+    "address": "333 Bay St, Toronto, ON",
+    "lat": 43.650380625620684, "lng": -79.38059361909502,
+    "funding": { "type": "Growth", "amount": "$200M @ $11B", "date": "2026-03" },
+    "tag": "Legal AI"
+  },
+  {
+    "name": "Rippling",
+    "domain": "rippling.com",
+    "address": "333 Bay St, Toronto, ON",
+    "lat": 43.650380625620684, "lng": -79.38059361909502,
+    "funding": { "type": "Series G", "amount": "$450M @ $16.8B", "date": "2025-05" }
+  },
+  {
+    "name": "eBay",
+    "domain": "ebay.com",
+    "address": "155 Queens Quay E, Toronto, ON M5A 1B4",
+    "lat": 43.6443720897514, "lng": -79.36692124780551,
+    "funding": { "type": "Public", "amount": "NASDAQ: EBAY" }
   }
 ]

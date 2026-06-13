@@ -30,6 +30,9 @@
   { "label": "SERIES A",  "text": "Secoda raises $14M led by Craft Ventures for its AI data platform at 109 Sudbury" },
   { "label": "SEED",      "text": "Argos Research raises $1.6M to build continual-learning neural nets from 145 Berkeley" },
   { "label": "FUND",      "text": "Golden Ventures' Fund V brings total AUM to $364M, from 20 Maud St" },
+  { "label": "AUTONOMY",  "text": "Waabi raises a $750M Series C to scale its autonomous-driving foundation model from Bathurst St" },
+  { "label": "LEGAL AI",  "text": "Harvey hits $11B on a $200M round, with a Toronto team at 333 Bay" },
+  { "label": "HR TECH",   "text": "Rippling raises $450M at $16.8B, also at 333 Bay" },
   { "label": "IPO",       "text": "Shopify trades as SHOP on TSX & NYSE" },
-  { "label": "STAT",      "text": "65 companies indexed across downtown Toronto" }
+  { "label": "STAT",      "text": "74 companies indexed across downtown Toronto" }
 ]
