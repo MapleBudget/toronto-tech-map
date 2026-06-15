@@ -519,5 +519,61 @@
     "address": "155 Queens Quay E, Toronto, ON M5A 1B4",
     "lat": 43.6443720897514, "lng": -79.36692124780551,
     "funding": { "type": "Public", "amount": "NASDAQ: EBAY" }
+  },
+  {
+    "name": "Square",
+    "domain": "squareup.com",
+    "address": "100 King St W, Suite 6100, Toronto, ON",
+    "lat": 43.64867675832018, "lng": -79.38164996400376,
+    "funding": { "type": "Public", "amount": "NYSE: XYZ (Block)" }
+  },
+  {
+    "name": "Toast",
+    "domain": "toasttab.com",
+    "address": "18 King St E, Toronto, ON M5C 1C4",
+    "lat": 43.64977268068802, "lng": -79.37692857106002,
+    "funding": { "type": "Public", "amount": "NYSE: TOST" }
+  },
+  {
+    "name": "Ritual",
+    "domain": "ritual.co",
+    "address": "111 Peter St, Toronto, ON M5V 2H1",
+    "lat": 43.64817248399745, "lng": -79.39211408881062,
+    "funding": { "type": "Series C", "amount": "$90M" }
+  },
+  {
+    "name": "Vena Solutions",
+    "domain": "venasolutions.com",
+    "address": "2 Fraser Ave, Suite 101, Toronto, ON M6K 1Y6",
+    "lat": 43.63537694548875, "lng": -79.42314439804856,
+    "funding": { "type": "Series C", "amount": "$300M" }
+  },
+  {
+    "name": "Sanofi",
+    "domain": "sanofi.com",
+    "address": "240 Richmond St W, Toronto, ON M5V 1V6",
+    "lat": 43.64973955899166, "lng": -79.38873064801783,
+    "funding": { "type": "Public", "amount": "NASDAQ: SNY" }
+  },
+  {
+    "name": "Lyft",
+    "domain": "lyft.com",
+    "address": "357 Bay St, Toronto, ON M5H 4A6",
+    "lat": 43.650768039615016, "lng": -79.38090516462276,
+    "funding": { "type": "Public", "amount": "NASDAQ: LYFT" }
+  },
+  {
+    "name": "HeyGen",
+    "domain": "heygen.com",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Series A", "amount": "$60M" }
+  },
+  {
+    "name": "Forma.ai",
+    "domain": "forma.ai",
+    "address": "155 Queens Quay E, Suite 200, Toronto, ON M5A 0W4",
+    "lat": 43.6443720897514, "lng": -79.36692124780551,
+    "funding": { "type": "Series B", "amount": "$45M USD ($57.8M CAD)" }
   }
 ]

@@ -523,7 +523,8 @@ function buildMarkers() {
     if (group.length > 1) {
       const k = group.indexOf(i);
       const ang = (2 * Math.PI / group.length) * k - Math.PI / 2;
-      const r = 22;
+      // Radius grows with cluster size so big stacks don't overlap
+      const r = Math.max(26, 16 / Math.sin(Math.PI / group.length));
       offset = [Math.cos(ang) * r, Math.sin(ang) * r];
     }
 
