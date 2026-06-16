@@ -582,5 +582,27 @@
     "address": "240 Richmond St W, Toronto, ON",
     "lat": 43.64973955899166, "lng": -79.38873064801783,
     "funding": { "type": "Seed", "amount": "$3.5M" }
+  },
+  {
+    "name": "Zip",
+    "domain": "ziphq.com",
+    "address": "1 University Ave, Toronto, ON",
+    "lat": 43.645940515819184, "lng": -79.3830729882491,
+    "funding": { "type": "Series D", "amount": "$190M" },
+    "tag": "Procurement orchestration"
+  },
+  {
+    "name": "Zynga",
+    "domain": "zynga.com",
+    "address": "15 John St, Toronto, ON M5V 3G6",
+    "lat": 43.64472695964904, "lng": -79.38843021941086,
+    "funding": { "type": "Acquired", "amount": "Take-Two (TTWO)" }
+  },
+  {
+    "name": "Faire",
+    "domain": "faire.com",
+    "address": "420 Wellington St W, Toronto, ON",
+    "lat": 43.6440767232364, "lng": -79.39635774545607,
+    "funding": { "type": "Growth", "amount": "$5.2B valuation" }
   }
 ]
