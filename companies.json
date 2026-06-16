@@ -132,12 +132,6 @@
     "funding": { "type": "Seed", "amount": "$8M ($11M total)", "date": "2025-01" }
   },
   {
-    "name": "DigitalOcean",
-    "domain": "digitalocean.com",
-    "lat": 43.67005648313432, "lng": -79.38554593242458,
-    "funding": { "type": "Public", "amount": "NYSE: DOCN" }
-  },
-  {
     "name": "Vector Institute",
     "domain": "vectorinstitute.ai",
     "lat": 43.66044479688847, "lng": -79.38914540358968,
