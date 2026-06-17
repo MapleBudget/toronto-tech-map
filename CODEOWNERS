@@ -1,0 +1,6 @@
+# Every file in this repo is owned by the maintainer.
+# This auto-requests their review on every pull request, and — when paired
+# with branch protection's "Require review from Code Owners" — blocks any
+# merge until they approve.
+
+* @NelsonLee-Code
