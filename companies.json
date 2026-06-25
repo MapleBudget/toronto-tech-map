@@ -598,5 +598,11 @@
     "address": "420 Wellington St W, Toronto, ON",
     "lat": 43.6440767232364, "lng": -79.39635774545607,
     "funding": { "type": "Growth", "amount": "$5.2B valuation" }
+  },
+  {
+    "name": "Chatforce",
+    "domain": "chatforceai.com",
+    "lat": 43.660814, "lng": -79.385856,
+    "funding": { "type": "Pre-Seed", "amount": "$2.1M" }
   }
 ]
